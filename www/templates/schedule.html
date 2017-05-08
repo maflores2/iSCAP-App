@@ -1,0 +1,9 @@
+<ion-view title="Schedule" id="page2">
+  <ion-content padding="true" class=" manual-remove-top-padding has-header">
+    <ion-list id="schedule-list3" class="manual-list-fullwidth">
+      <ion-item class="item-icon-left" id="schedule-list-item8" ui-sref="menu.event({&quot;eventTitle&quot;:&quot;&quot;+item.eventTitle+&quot;&quot;,&quot;paper&quot;:&quot;&quot;+item.customLabel+&quot;&quot;,&quot;chair&quot;:&quot;&quot;+item.chair+&quot;&quot;,&quot;date&quot;:&quot;&quot;+item.date+&quot;&quot;,&quot;startTime&quot;:&quot;&quot;+item.startTime+&quot;&quot;,&quot;endTime&quot;:&quot;&quot;+item.endTime+&quot;&quot;,&quot;mealType&quot;:&quot;&quot;+item.mealType+&quot;&quot;,&quot;room&quot;:&quot;&quot;+item.room+&quot;&quot;,&quot;subjectArea&quot;:&quot;&quot;+item.subjectArea+&quot;&quot;,&quot;note&quot;:&quot;&quot;+item.note+&quot;&quot;})"
+        ng-repeat="item in items">
+        <i class="icon ion-android-time"></i>{{item.eventTitle}}</ion-item>
+    </ion-list>
+  </ion-content>
+</ion-view>

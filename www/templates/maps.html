@@ -1,0 +1,13 @@
+<ion-view title="Maps" id="page3">
+  <ion-content padding="true" class="has-header">
+    <h1 id="maps-heading1" style="color:#000000;">Plaza Hotel Area Map</h1>
+    <creator-map-component options="{}" marker="true" location="1 Main Street Las Vegas, NV 89101" zoom="12" style="display:block;position:relative;width:100%;height:300px;">
+      <ui-gmap-google-map ng-if="map.center" center="map.center" zoom="map.zoom" options="map.options">
+        <ui-gmap-marker coords="map.marker.coords" idkey="map.marker.id" options="map.marker.options"></ui-gmap-marker>
+      </ui-gmap-google-map>
+    </creator-map-component>
+    <div id="maps-button-bar1" class="button-bar">
+      <a ui-sref="menu.hotelInterior" id="maps-button4" class="button button-positive  button-block">Hotel Interior</a>
+    </div>
+  </ion-content>
+</ion-view>
